@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="{{'/css/app.css'}}">
     </head>
     <body class="antialiased">
-    <x-layout.navbar></
+    <x-layout.navbar></x-layout.navbar>
     {{ $slot}}
     <footer>Footer</footer>
     <script src="{{asset('js/app.js')}}"></script>

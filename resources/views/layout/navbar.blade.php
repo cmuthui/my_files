@@ -28,8 +28,8 @@ class="fixed left-0 top-0 z-50 bg-white w-full flex items-center shadow-md dark:
                 class="absolute right-0 top-full bg-white py-5 px-6 z-50 shadow rounded-lg w-full dark:bg-slate-900 dark:text-gray-300 lg:max-w-full lg:w-full lg:right-4 lg:block lg:static lg:shadow-none"
             >
             <ul class="block lg:flex lg:items-center">
-                @foreach ($navigationItems as $item)
-                    <x-layout.navbar-Item :href="$item['href']">{{$item['label']}}<x-layout.navbar-Item>
+                @foreach($navigationItems as $item)
+                    <x-layout.navbar-item :href="$item['href']">{{$item['label']}}</x-layout.navbar-item>
                 @endforeach
             </ul>
             </nav>
@@ -37,6 +37,5 @@ class="fixed left-0 top-0 z-50 bg-white w-full flex items-center shadow-md dark:
 
     </div>
 </div>
-
 </header>
 <!-- ======= Navbar Section End -->
